@@ -73,18 +73,18 @@ if uploaded_file is not None:
                 st.write(response.response)
                 message = {"role": "assistant", "content": response.response}
                 st.session_state.messages.append(message) # Add response to message history
-    components.html(
-        <script> var xpaths = [
-  "//div[@class='css-zq5wmm ezrtsby0']",
-  "//button[@class='styles_terminalButton__JBj5T']",
-  "//footer[@class='css-h5rgaw ea3mdgi1']",
-];
+#     components.html(
+#         <script> var xpaths = [
+#   "//div[@class='css-zq5wmm ezrtsby0']",
+#   "//button[@class='styles_terminalButton__JBj5T']",
+#   "//footer[@class='css-h5rgaw ea3mdgi1']",
+# ];
 
-xpaths.forEach(function(xpath) {
-  var element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+# xpaths.forEach(function(xpath) {
+#   var element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
-  if (element) {
-    element.style.display = "none";
-  }
-</script>
-});
+#   if (element) {
+#     element.style.display = "none";
+#   }
+# </script>
+# });
